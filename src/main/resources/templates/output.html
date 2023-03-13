@@ -5,11 +5,14 @@
 <title>Kadai of Thymeleaf</title>
 </head>
 <body>
-<h1>Thymeleaf課題</h1>
-<p>入力画面</p>
-<p th:if="${previous} neq ${null}" th:text="'前回入力した値は「' + ${previous} + '」でした。'">th:if</p>
+	<h1>Thymeleaf課題</h1>
+	<p>入力画面</p>
+	<p th:if="${previous} neq ${null}"
+		th:text="'前回入力した値は「' + ${previous} + '」でした。'">th:if</p>
 
-<p><a th:href="@{/input/(previous=${param.previous[0]})}">入力画面へ戻る</a></p>
+	<p>
+		<a th:href="@{/input/(previous=${param.previous[0]})}">入力画面へ戻る</a>
+	</p>
 
 </body>
 </html>
