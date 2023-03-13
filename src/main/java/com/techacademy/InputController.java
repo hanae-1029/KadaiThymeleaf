@@ -16,8 +16,8 @@ public class InputController {
     }
 
     @PostMapping("/input")
-    public String input(@RequestParam("previous") String previous, Model madel) {
-        madel.addAttribute("previous", previous);
+    public String input(@RequestParam("previous") String previous, Model model) {
+        model.addAttribute("previous", previous);
         return "input";
     }
 

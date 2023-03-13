@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class OutputController {
 
     @PostMapping("/output")
-    public String postOutput(@RequestParam("previous") String previous, Model madel) {
-        madel.addAttribute("previous", previous);
+    public String postOutput(@RequestParam("val") String val, Model model) {
+        model.addAttribute("val", val);
         return "output";
     }
 

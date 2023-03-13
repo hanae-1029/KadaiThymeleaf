@@ -11,7 +11,8 @@
 		th:text="'前回入力した値は「' + ${previous} + '」でした。'">th:if</p>
 
 	<p>
-		<a th:href="@{/input/(previous=${param.previous[0]})}">入力画面へ戻る</a>
+		<a th:href="@{/input/(previous=${val})}">入力画面へ戻る</a>
+		
 	</p>
 
 </body>
