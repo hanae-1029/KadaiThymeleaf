@@ -5,8 +5,8 @@
 <title>Kadai of Thymeleaf</title>
 </head>
 <body>
-	<h1>Thymeleaf課題</h1>
-	<p>入力画面</p>
+	<h1 th:text="#{content.title}"></h1>
+    <p th:text="#{content.message}"></p>
 	<p th:if="${previous} neq ${null}"
 		th:text="'前回入力した値は「' + ${previous} + '」でした。'">th:if</p>
 
