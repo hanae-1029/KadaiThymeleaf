@@ -9,8 +9,6 @@
 	<p>入力画面</p>
 	<p>値を入力してください。</p>
 
-	<p th:if="${previous} neq ${null}"
-		th:text="'前回入力した値は「' + ${previous} + '」でした。'">th:if</p>
 
 	<form method="post" action="/output">
 		<input type="text" name="previous">
