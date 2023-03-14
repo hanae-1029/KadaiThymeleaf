@@ -12,6 +12,6 @@ public class OutputController {
     public String postOutput(@RequestParam("val") String val, Model model) {
         model.addAttribute("val", val);
         return "output";
-    }
 
+    }
 }

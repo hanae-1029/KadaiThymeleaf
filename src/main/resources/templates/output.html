@@ -7,8 +7,8 @@
 <body>
 	<h1 th:text="#{content.title}"></h1>
     <p th:text="#{content.message}"></p>
-	<p th:if="${previous} neq ${null}"
-		th:text="'前回入力した値は「' + ${previous} + '」でした。'">th:if</p>
+	<p th:if="${val} neq ${null}"
+		th:text="'前回入力した値は「' + ${val} + '」でした。'">th:if</p>
 
 	<p>
 		<a th:href="@{/input/(previous=${val})}">入力画面へ戻る</a>

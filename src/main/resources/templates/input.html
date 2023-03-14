@@ -8,8 +8,8 @@
 	<h1 th:text="#{content.title}"></h1>
 	<p th:text="#{content.message}"></p>
 	<p>値を入力してください。</p>
-	<p th:if="${previous} neq ${null}"
-        th:text="'前回入力した値は「' + ${previous} + '」でした。'">th:if</p>
+	<p th:if="${param.previous} neq ${null}"
+        th:text="'前回入力した値は「' + ${param.previous} + '」でした。'">th:if</p>
 	
 
 
